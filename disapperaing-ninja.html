@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disappearing Ninja</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type ="text/javascript">
+        $(document).ready(function () {
+            $("img").click(function () { 
+                $(this).hide();
+            });
+            $("button").click(function () { 
+                $("img").show();
+                
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <h1>jQuery - Disappearing Ninja</h1>
+        <div id="boxes">
+            <img src="ninja.png" alt="ninja guy" id="img1">
+            <img src="ninja.png" alt="ninja guy" id="img2">
+            <img src="ninja.png" alt="ninja guy" id="img3">
+            <img src="ninja.png" alt="ninja guy" id="img4">
+            <img src="ninja.png" alt="ninja guy" id="img5">
+            <img src="ninja.png" alt="ninja guy" id="img6">
+            <img src="ninja.png" alt="ninja guy" id="img7">
+            <img src="ninja.png" alt="ninja guy" id="img8">
+        </div>
+        <button>Refresh</button>
+
+    </div>
+</body>
+</html>
